@@ -1,0 +1,270 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #efefef;
+}
+
+.container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    top: 0px;
+    right: 0px;
+}
+
+.header{
+    position: relative;
+    height: 37%;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px black;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 2%;
+}
+
+.Title{
+    position: relative;
+    background: #efefef;
+    width: 60%;
+    height: 100%;
+}
+
+.Name {
+    position: relative;
+    background: #efefef;
+    display: flex;
+    height: 60%;
+    margin-left: 2%;
+}
+
+#name {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 100px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.Description{
+    position: relative;
+    background: #efefef;
+    height: 40%;
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 2%;
+}
+
+#description{
+    font-size: 20px;
+    background: #CAEBF2;
+}
+
+.Contact{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background: #CAEBF2;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-left: solid 2px black;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+.contact-title{
+    margin-top: 10%;
+    margin-bottom: 2%;
+    position: relative;
+    font-size: 30px;
+    
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-links{
+    position: relative;
+    column-gap: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+#link-1{
+    position: relative;
+    justify-content: center;
+}
+
+#link-2{
+    position: relative;
+    justify-content: center;
+}
+
+#link-3{
+    position: relative;
+    justify-content: center;
+    padding-top: 1%;
+}
+
+#link-4{
+    position: relative;
+    justify-content: center;
+}
+
+.project-container {
+    position: relative;
+    background: #efefef;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    height: auto;
+}
+
+.project-list {
+    position: relative;
+    background: #efefef;
+    margin: 1% 2% 2% 1%;
+    display: flex;
+    height: auto;
+}
+
+.project {
+    flex: 1;
+    position: relative;
+    background: #efefef;
+    border: 2px solid black;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2%;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-flow: column;
+    height: fixed;
+    box-shadow: 0px 0.1875rem .4375rem rgba(0, 0, 0, 1.25);
+}
+
+.project-content{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container{
+    position: relative;
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img{
+    flex-shrink: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.button-slider{
+    position: relative;
+    border: 1px solid red;
+}
+
+.left{
+    position: absolute;
+    padding: 5px 15px;
+    top: 35%;
+    right: 100%;
+    transform: translateX(145%);
+}
+
+.right{
+    position: absolute;
+    padding: 5px 15px;
+    top: 35%;
+    left: 100%;
+    transform: translateX(-145%);
+}
+
+.left-2{
+    position: absolute;
+    padding: 5px 15px;
+    top: 35%;
+    right: 100%;
+    transform: translateX(145%);
+}
+
+.right-2{
+    position: absolute;
+    padding: 5px 15px;
+    top: 35%;
+    left: 100%;
+    transform: translateX(-145%);
+}
+
+.project-description {
+    position: relative;
+    background: #efefef;
+    padding : 0px;
+    margin: 0px;
+    
+}
+
+.project-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 27px;
+    margin: 0px;
+}
+
+.description{
+    margin: 0px;
+}
+
+.buttons{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background:#efefef;
+    flex-grow : 1;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+button{
+    background: #efefef;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    border: solid 2px black;
+    padding: 20px 30px;
+    transition-duration: 0.4s;
+    margin: 0 20px;
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+button:hover{
+    background: black;
+    color: white;
+}
+
+#contact-me-bar{
+    position: relative;
+    column-gap: 8%;
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-content: center;
+    background: black;
+}
+
+#resume{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    color: white;
+}
