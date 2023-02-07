@@ -2,10 +2,19 @@ var slideIndex = 1;
 var slideIndex2 = 1;
 var slideIndex3 = 1;
 var slideIndex4 = 1;
+var slideIndex5 = 1;
+var slideIndex6 = 1;
+var slideIndex7 = 1;
+var slideIndex8 = 1;
+
 showDivs(slideIndex);
 showDivs2(slideIndex2);
 showDivs3(slideIndex3);
 showDivs4(slideIndex4);
+showDivs5(slideIndex5);
+showDivs6(slideIndex6);
+showDivs7(slideIndex7);
+showDivs8(slideIndex8);
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -22,6 +31,23 @@ function plusDivs3(n) {
 function plusDivs4(n) {
   showDivs4(slideIndex4 += n);
 }
+
+function plusDivs5(n) {
+  showDivs5(slideIndex5 += n);
+}
+
+function plusDivs6(n) {
+  showDivs6(slideIndex6 += n);
+}
+
+function plusDivs7(n) {
+  showDivs7(slideIndex7 += n);
+}
+
+function plusDivs8(n) {
+  showDivs8(slideIndex8 += n);
+}
+
 
 function showDivs(n) {
   var i;
@@ -67,5 +93,47 @@ function showDivs4(n) {
   x[slideIndex4-1].style.display = "block";
 }
 
+function showDivs5(n) {
+  var i;
+  var x = document.getElementsByClassName("EEV2");
+  if (n > x.length) {slideIndex5 = 1}
+  if (n < 1) {slideIndex5 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex5-1].style.display = "block";
+}
 
+function showDivs6(n) {
+  var i;
+  var x = document.getElementsByClassName("camMount");
+  if (n > x.length) {slideIndex6 = 1}
+  if (n < 1) {slideIndex6 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex6-1].style.display = "block";
+}
+
+function showDivs7(n) {
+  var i;
+  var x = document.getElementsByClassName("EEV3");
+  if (n > x.length) {slideIndex7 = 1}
+  if (n < 1) {slideIndex7 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex7-1].style.display = "block";
+}
+
+function showDivs8(n) {
+  var i;
+  var x = document.getElementsByClassName("wrist");
+  if (n > x.length) {slideIndex8 = 1}
+  if (n < 1) {slideIndex8 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex8-1].style.display = "block";
+}
 
