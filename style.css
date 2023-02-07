@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background: #efefef;
+    background: black;
     
 }
 
@@ -21,7 +21,7 @@ body{
     height: 27%;
     display: flex;
     align-items: center;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px red;
     margin-left: 8%;
     margin-right: 8%;
     margin-bottom: 0%;
@@ -29,14 +29,14 @@ body{
 
 .Title{
     position: relative;
-    background: #efefef;
+    background: black;
     width: 60%;
     height: 100%;
 }
 
 .Name {
     position: relative;
-    background: #efefef;
+    background: black;
     display: flex;
     height: 60%;
     margin-left: 2%;
@@ -47,30 +47,34 @@ body{
     margin-bottom: auto;
     font-size: 100px;
     font-family: 'Roboto Condensed', sans-serif;
+    color: white;
 }
 
 .Description{
     position: relative;
-    background: #efefef;
+    background: black;
     height: 40%;
     display: flex;
     font-family: 'Roboto Condensed', sans-serif;
     margin-left: 2%;
+    color: white;
 }
 
 #description{
     font-size: 20px;
-    background: #CAEBF2;
+    background: red;
+    font-weight: bold;
+    color: black;
 }
 
 .Contact{
     position: relative;
     height: 100%;
     width: 50%;
-    background: #CAEBF2;
+    background: black;
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
-    border: solid 2px black;
+    border: solid 2px white;
     font-weight: bold;
     font-size: 25px;
     
@@ -80,6 +84,7 @@ body{
     margin-top: 5%;
     margin-bottom: 7%;
     font-size: 30px;
+    color: white;
 }
 
 a:link{
@@ -97,6 +102,7 @@ a:link{
 #link-1{
     position: relative;
     justify-content: center;
+    color: white;
 }
 
 #link-2{
@@ -107,7 +113,6 @@ a:link{
 #link-3{
     position: relative;
     justify-content: center;
-    padding-top: 1%;
 }
 
 #link-4{
@@ -117,7 +122,7 @@ a:link{
 
 .project-container {
     position: relative;
-    background: #efefef;
+    background: black;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 1%;
@@ -126,7 +131,7 @@ a:link{
 
 .project-list {
     position: relative;
-    background: #efefef;
+    background: black;
     margin: 1% 2% 2% 1%;
     display: flex;
     height: auto;
@@ -134,8 +139,8 @@ a:link{
 
 .project-single {
     position: relative;
-    background: #efefef;
-    border: 2px solid black;
+    background: black;
+    border: 2px solid white;
     font-family: 'Roboto Condensed', sans-serif;
     box-shadow: 0px 0.1875rem .4375rem rgba(0, 0, 0, 1.25);
     margin: auto;
@@ -146,8 +151,8 @@ a:link{
 .project {
     flex: 1;
     position: relative;
-    background: #efefef;
-    border: 2px solid black;
+    background: black;
+    border: 1px solid white;
     margin-left: 2%;
     margin-right: 2%;
     padding: 2%;
@@ -166,7 +171,7 @@ a:link{
 
 .image-container{
     position: relative;
-    background: #efefef;
+    background: black;
     display: flex;
     justify-content: center;
 }
@@ -216,7 +221,7 @@ a:link{
 
 .project-description {
     position: relative;
-    background: #efefef;
+    background: black;
     padding : 0px;
     margin: 0px;
     
@@ -228,28 +233,34 @@ a:link{
     font-size: 27px;
     margin: 0px;
     margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: underline;
 }
 
 .description{
     margin: auto;
     text-align: center;
+    color: white;
+    font-weight: bold;
 }
 
 .buttons{
     position: relative;
     justify-content: center;
     display: flex;
-    background:#efefef;
+    background: black;
     flex-grow : 1;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
 button{
-    background: #efefef;
+    background: black;
     font-family: 'Roboto Condensed', sans-serif;
+    color: white;
     font-weight: bold;
-    border: solid 2px black;
+    border: solid 2px white;
     padding: 20px 30px;
     transition-duration: 0.4s;
     margin: 0 20px;
@@ -259,8 +270,8 @@ button{
 }
 
 button:hover{
-    background: black;
-    color: white;
+    background: white;
+    color: black;
 }
 
 #contact-me-bar{
