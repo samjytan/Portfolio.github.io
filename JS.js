@@ -6,6 +6,10 @@ var slideIndex5 = 1;
 var slideIndex6 = 1;
 var slideIndex7 = 1;
 var slideIndex8 = 1;
+var slideIndex9 = 1; //jounce damper
+var slideIndex10 = 1; //Suspension linkages
+var slideIndex11 = 1; //wrist 1.5
+var slideIndex12 = 1; //egg prototyping device
 
 showDivs(slideIndex);
 showDivs2(slideIndex2);
@@ -15,6 +19,11 @@ showDivs5(slideIndex5);
 showDivs6(slideIndex6);
 showDivs7(slideIndex7);
 showDivs8(slideIndex8);
+showDivs9(slideIndex9);
+showDivs10(slideIndex10);
+showDivs11(slideIndex11);
+showDivs12(slideIndex12);
+
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -48,6 +57,21 @@ function plusDivs8(n) {
   showDivs8(slideIndex8 += n);
 }
 
+function plusDivs9(n) {
+  showDivs9(slideIndex9 += n);
+}
+
+function plusDivs10(n) {
+  showDivs10(slideIndex10 += n);
+}
+
+function plusDivs11(n) {
+  showDivs11(slideIndex11 += n);
+}
+
+function plusDivs12(n) {
+  showDivs12(slideIndex12 += n);
+}
 
 function showDivs(n) {
   var i;
@@ -137,3 +161,57 @@ function showDivs8(n) {
   x[slideIndex8-1].style.display = "block";
 }
 
+function showDivs9(n) {
+  var i;
+  var x = document.getElementsByClassName("jounceDamper");
+  if (n > x.length) {slideIndex9 = 1}
+  if (n < 1) {slideIndex9 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex9-1].style.display = "block";
+}
+
+function showDivs10(n) {
+  var i;
+  var x = document.getElementsByClassName("RSL");
+  if (n > x.length) {slideIndex10 = 1}
+  if (n < 1) {slideIndex10 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex10-1].style.display = "block";
+}
+
+function showDivs10(n) {
+  var i;
+  var x = document.getElementsByClassName("RSL");
+  if (n > x.length) {slideIndex10 = 1}
+  if (n < 1) {slideIndex10 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex10-1].style.display = "block";
+}
+
+function showDivs11(n) {
+  var i;
+  var x = document.getElementsByClassName("wrist1.5");
+  if (n > x.length) {slideIndex11 = 1}
+  if (n < 1) {slideIndex11 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex11-1].style.display = "block";
+}
+
+function showDivs12(n) {
+  var i;
+  var x = document.getElementsByClassName("ESM");
+  if (n > x.length) {slideIndex12 = 1}
+  if (n < 1) {slideIndex12 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex12-1].style.display = "block";
+}
