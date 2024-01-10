@@ -2,7 +2,6 @@
 <html>
 	<head>
         <meta charset="UTF-8">
-        
         <title>Samuel Tan</title>
         <link href="style.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,35 +15,42 @@
     <body>
         <div class = "container">
             <div class = "header">
-                
                 <div class = "Title">
                     <div class = "Name">
                         <h1 id = "name">Samuel Tan</h1> 
                     </div>
                     
                     <div class = "Description">
-                        <p id = "description">Mechanical Engineering student at the University of Ottawa</p>
+                        <p id = "description">I am a Mechanical Engineering student at the University of Ottawa, the Mechanical Lead of <strong><span style="color: rgb(255, 68, 0) ">UO</span></strong><strong><span style="color: black ">ROVER</span></strong> and upcoming team captain. Below are some of my projects throughout my university years and COOPs.</p>
                         
                     </div>
                     
                 </div>
 
                 <div class = "Contact">
-                    <div class = "contact-title">GET IN TOUCH</div>
-                    <div class = "contact-links">
-                        <div id="link-1"><a href="images + files/Resume - Samuel Tan 2023.pdf" download target = "_blank"><span title="Download"><span style="color: white ">Resume:</span> <img src="images + files/white-download.jpg" title="Download" height = "40" width="40" ></a></div>
-                        <div id="link-2"><a href="mailto:samjytan@gmail.com" target = "_blank"><img src="images + files/white-mail.jpg" height = "50" width="50" title="Email"></a></div>
-                        <div id="link-3"><a href="https://www.linkedin.com/in/samuel-tan-60b9641a9/" target = "_blank"><img src="images + files/white-linkedin.jpg" title="LinkedIn" height = "50" width="50"></a></div>
-                        <div id="link-4"><a href="https://github.com/samjytan" target = "_blank"><img src="images + files/white-github.jpg" title="Github" height = "50" width="50"></a></div>
-                    </div>
-                    
+                        <img src="images + files/banner_orbitron.jpg" height="200">
                 </div>
 
             </div>
 
             <div class = "project-container">
-
                 <div class = "project-list">
+                    <!--Robotic arm V2.1-->
+                    <div class = "project">
+                        <div class = "image-container">
+                            <img class = "RAV2.1" src="images + files/RAV2_1-3.jpg" height="300">
+                            <img class = "RAV2.1" src="images + files/RAV2_1-1.jpg" height="300">
+                            <img class = "RAV2.1" src="images + files/RAV2_1-2.jpg" height="300">
+                        </div>
+                        
+                        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="right" onclick="plusDivs(+1)">&#10095;</button>
+
+                        <div class = "project-description">
+                            <p class = "project-title">Robotic Arm V2.1</p>
+                            <p class = "description">Redesigned the robotic arm's lower arm, wrist, and end effector assembly to improve torque, tolerance, and structural integrity. </p>.
+                        </div>
+                    </div>
                     <!--The Colorado ZR2 Bison-->
                     <div class = "project">
                         <div class = "image-container">
@@ -58,149 +64,61 @@
                             <img class = "jounceDamper" src="images + files/Jounce 8.jpeg" height="300">
                         </div>
 
-                        <button class="left" onclick="plusDivs9(-1)">&#10094;</button>
-                        <button class="right" onclick="plusDivs9(+1)">&#10095;</button>
+                        <button class="left" onclick="plusDivs2(-1)">&#10094;</button>
+                        <button class="right" onclick="plusDivs2(+1)">&#10095;</button>
 
                         <div class = "project-description">
-                            <p class = "project-title">Chevy Colorado ZR2 Bison Jounce Dampers</p>
-                            <p class = "description">Participated in the development of Multimatic Jounce Dampers for the Chevy Colorado. Throughout my internship, I used <strong><span style="color: #FF3b3F ">NX</span></strong> to generate various damper components and technical drawings for assembly. Additionally, I created a <strong><span style="color: #FF3b3F ">MATLAB</span></strong> script to calculate the damping force seen at different displacements during testing.</p>
+                            <p class = "project-title">Chevrolet Colorado ZR2 Jounce Dampers</p>
+                            <p class = "description">Participated in the development of Multimatic's Jounce Dampers for the Chevrolet Colorado and its Bison variant </p>
                             
                         </div>
-                        <!--
-                        <div class = "buttons">
-                            <a href="https://grabcad.com/library/end-effector-prototype-1" target = "_blank"><button>VIEW ON GRABCAD</button></a>
-                        </div>
-                        -->
-                    </div>
-
-                    <!--Rover Suspension Linkages-->
-                    <div class = "project">
-                        <div class = "image-container">
-                            <img class = "RSL" src="images + files/RSL3.jpg" height="300">
-                            <img class = "RSL" src="images + files/RSL1.jpg" height="300">
-                            <img class = "RSL" src="images + files/RSL4.jpg" height="300">
-                        </div>
-                        
-                        <button class="left" onclick="plusDivs10(-1)">&#10094;</button>
-                        <button class="right" onclick="plusDivs10(+1)">&#10095;</button>
-
-                        <div class = "project-description">
-                            <p class = "project-title">Suspension Linkages</p>
-                            <p class = "description">Remodelled the suspension linkages for University of Ottawa's Mars Rover Team, replacing carbon fiber tubes with aluminum tubes to improve tolerances and maintain structural integrity</p>.
-                        </div>
-                        <!--
-                        <div class = "buttons">
-                            <a href="https://makerepo.com/jrami053/1042.gng2101-b15-rbs" target = "_blank"><button>Project Repository</button></a>
-                            <a href="https://github.com/samjytan/Remote-Braking-System" target = "_blank"><button>View Code</button></a>
-                        </div>
-                        -->
                     </div>
                </div>
-
-
-               <div class = "project-list">
-                <!--Wrist 1.5-->
-                <div class = "project">
-                    <div class = "image-container">
-                        <img class = "wrist1.5" src="images + files/wrist1.5 1.jpg" height="300">
-                        <img class = "wrist1.5" src="images + files/wrist1.5 2.jpg" height="300">
-                    </div>
-
-                    <button class="left" onclick="plusDivs11(-1)">&#10094;</button>
-                    <button class="right" onclick="plusDivs11(+1)">&#10095;</button>
-
-                    <div class = "project-description">
-                        <p class = "project-title">Wrist 1.5 - Robotic Arm</p>
-                        <p class = "description">Redesigned Wrist 1.0 to replace the steel bearings with nylon and bronze bushings, saving 725g, and upgrading the 3D printed output shaft with aluminium to reduce stress.</p>
-                        
-                    </div>
-                    <!--
-                    <div class = "buttons">
-                        <a href="https://grabcad.com/library/end-effector-prototype-1" target = "_blank"><button>VIEW ON GRABCAD</button></a>
-                    </div>
-                    -->
-                </div>
-
                 <!--Egg punturing device-->
-                <div class = "project">
-                    <div class = "image-container">
-                        <img class = "ESM" src="images + files/ESM1.jpg" height="300">
-                        <img class = "ESM" src="images + files/ESM2.jpg" height="300">
-                        <img class = "ESM" src="images + files/ESM3.jpg" height="300">
-                        <img class = "ESM" src="images + files/ESM4.jpg" height="300">
-                        <img class = "ESM" src="images + files/ESM5.jpg" height="300">
-                        <img class = "ESM" src="images + files/ESM6.jpg" height="300">
-                        <img class = "ESM" src="images + files/ESM7.gif" height="300">
-                        <img class = "ESM" src="images + files/ESM8.gif" height="300">
-                    </div>
-                    
-                    <button class="left" onclick="plusDivs12(-1)">&#10094;</button>
-                    <button class="right" onclick="plusDivs12(+1)">&#10095;</button>
-
-                    <div class = "project-description">
-                        <p class = "project-title">Egg Shell Membrane (ESM) Extraction Device</p>
-                        <p class = "description">Prototyped an electromechanical puncturing device for extracting ESMs, reducing waste in liquid egg processing plants and handling eggs with a 100% success rate.
-                    </div>
-                    <!--
-                    <div class = "buttons">
-                        <a href="https://makerepo.com/jrami053/1042.gng2101-b15-rbs" target = "_blank"><button>Project Repository</button></a>
-                        <a href="https://github.com/samjytan/Remote-Braking-System" target = "_blank"><button>View Code</button></a>
-                    </div>
-                    -->
-                </div>
-            </div>
-
                 <div class = "project-list">
-                    <!--EE V3-->
+
                     <div class = "project">
                         <div class = "image-container">
-                            <img class = "EEV3" src="images + files/EE V3 1.jpg" height="300">
-                            <img class = "EEV3" src="images + files/EE V3 2.jpg" height="300">
-                            <img class = "EEV3" src="images + files/EE V3 4.jpg" height="300">
-                            <img class = "EEV3" src="images + files/EE V3 3.jpg" height="300">
-                        </div>
-
-                        <button class="left" onclick="plusDivs7(-1)">&#10094;</button>
-                        <button class="right" onclick="plusDivs7(+1)">&#10095;</button>
-
-                        <div class = "project-description">
-                            <p class = "project-title">End Effector V3 - Robotic Arm</p>
-                            <p class = "description">Redesigned version two of the End Effector using <strong><span style="color: #FF3b3F ">SolidWorks</span></strong> and <strong><span style="color: #FF3b3F ">FEA</span></strong>. The <strong><span style="color: #FF3b3F ">mill</span></strong> and <strong><span style="color: #FF3b3F ">lathe</span></strong> were also used in the construction of the end effector. V3 has a reduced assembly time of <strong><span style="color: #FF3b3F ">25%</span></strong> and greater structural integrity.</p>
-                            
-                        </div>
-                        <!--
-                        <div class = "buttons">
-                            <a href="https://grabcad.com/library/end-effector-prototype-1" target = "_blank"><button>VIEW ON GRABCAD</button></a>
-                        </div>
-                        -->
-                    </div>
-
-                    <!--Wrist-->
-                    <div class = "project">
-                        <div class = "image-container">
-                            <img class = "wrist" src="images + files/wrist 1.jpg" height="300">
-                            <img class = "wrist" src="images + files/wrist 2.jpg" height="300">
-                            <img class = "wrist" src="images + files/wrist 3.jpg" height="300">
+                            <img class = "ESM" src="images + files/ESM1.jpg" height="300">
+                            <img class = "ESM" src="images + files/ESM2.jpg" height="300">
+                            <img class = "ESM" src="images + files/ESM3.jpg" height="300">
+                            <img class = "ESM" src="images + files/ESM4.jpg" height="300">
+                            <img class = "ESM" src="images + files/ESM5.jpg" height="300">
+                            <img class = "ESM" src="images + files/ESM6.jpg" height="300">
+                            <img class = "ESM" src="images + files/ESM7.gif" height="300">
+                            <img class = "ESM" src="images + files/ESM8.gif" height="300">
                         </div>
                         
-                        <button class="left" onclick="plusDivs8(-1)">&#10094;</button>
-                        <button class="right" onclick="plusDivs8(+1)">&#10095;</button>
-
+                        <button class="left" onclick="plusDivs3(-1)">&#10094;</button>
+                        <button class="right" onclick="plusDivs3(+1)">&#10095;</button>
+    
                         <div class = "project-description">
-                            <p class = "project-title">Wrist V1 - Robotic Arm</p>
-                            <p class = "description">Oversaw the assembly of the wrist joint. <strong><span style="color: #FF3b3F ">3D printed</span></strong> wrist components and created an <strong><span style="color: #FF3b3F ">assembly drawing </span></strong> using <strong><span style="color: #FF3b3F ">SolidWorks</span></strong>.
+                            <p class = "project-title">Egg Shell Membrane (ESM) Extraction Device</p>
+                            <p class = "description">Prototyped an electromechanical puncturing device for extracting ESMs, reducing waste in liquid egg processing plants and handling eggs with a 100% success rate.</p>
                         </div>
-                        <!--
-                        <div class = "buttons">
-                            <a href="https://makerepo.com/jrami053/1042.gng2101-b15-rbs" target = "_blank"><button>Project Repository</button></a>
-                            <a href="https://github.com/samjytan/Remote-Braking-System" target = "_blank"><button>View Code</button></a>
-                        </div>
-                        -->
                     </div>
-               </div>
 
+                    <div class = "project">
+                        <div class = "image-container">
+                            <img class = "LDSC" src="images + files/LDSC1.jpg" height="300">
+                            <img class = "LDSC" src="images + files/LDSC2.jpg" height="300">
+                        </div>
+    
+                        <button class="left" onclick="plusDivs4(-1)">&#10094;</button>
+                        <button class="right" onclick="plusDivs4(+1)">&#10095;</button>
+    
+                        <div class = "project-description">
+                            <p class = "project-title">Life Detection Soil Collection</p>
+                            <p class = "description">Designed a soil collection unit to house a corer for collecting sub-surface sample of up to 10cm.</p>
+                            
+                        </div>
+                        
+                    </div>
+
+
+                </div>
                 <div class = "project-list">
-                    <!--EE V2-->
+                    <!---->
                     <div class = "project">
                         <div class = "image-container">
                             <img class = "EEV2" src="images + files/EE V2 2.jpg" height="300">
@@ -208,181 +126,80 @@
                             <img class = "EEV2" src="images + files/EE V2 3.jpg" height="300">
                             <img class = "EEV2" src="images + files/EE V2 4.jpeg" height="300">
                         </div>
-
+    
                         <button class="left" onclick="plusDivs5(-1)">&#10094;</button>
                         <button class="right" onclick="plusDivs5(+1)">&#10095;</button>
-
+    
                         <div class = "project-description">
                             <p class = "project-title">End Effector V2 - Robotic Arm</p>
-                            <p class = "description">Used <strong><span style="color: #FF3b3F ">SolidWorks</span></strong> to model a prototype of the end effector of a robotic arm for uOttawa's Mars Rover Team.</p>
-                            
+                            <p class = "description">Used SolidWorks to model a prototype of the end effector of a robotic arm for uOttawa's Mars Rover Team.</p>
                         </div>
-                        <!--
-                        <div class = "buttons">
-                            <a href="https://grabcad.com/library/end-effector-prototype-1" target = "_blank"><button>VIEW ON GRABCAD</button></a>
-                        </div>
-                        -->
                     </div>
-
-                    <!--Camera Mount Robotic Arm-->
+    
+                    <!--Wrist-->
                     <div class = "project">
                         <div class = "image-container">
-                            <img class = "camMount" src="images + files/cam mount 2.jpg" height="300">
-                            <img class = "camMount" src="images + files/cam mount.jpg" height="300">
-                            <img class = "camMount" src="images + files/cam mount 3.jpg" height="300">
+                            <img class = "wrist" src="images + files/wrist1.5 1.jpg" height="300">
+                            <img class = "wrist" src="images + files/wrist1.5 2.jpg" height="300">
                         </div>
                         
                         <button class="left" onclick="plusDivs6(-1)">&#10094;</button>
                         <button class="right" onclick="plusDivs6(+1)">&#10095;</button>
-
+    
                         <div class = "project-description">
-                            <p class = "project-title">Robotic Arm Camera Mount</p>
-                            <p class = "description">Used <strong><span style="color: #FF3b3F ">SolidWorks</span></strong> to construct a camera mount for the robotic arm. This allows the arm operator to aim the arm when controlling it wirelessly</p>
+                            <p class = "project-title">Wrist V2 - Robotic Arm</p>
+                            <p class = "description">Oversaw the assembly and redesign of the wrist joint to reduce mass and improve strength </p>
                         </div>
-                        <!--
-                        <div class = "buttons">
-                            <a href="https://makerepo.com/jrami053/1042.gng2101-b15-rbs" target = "_blank"><button>Project Repository</button></a>
-                            <a href="https://github.com/samjytan/Remote-Braking-System" target = "_blank"><button>View Code</button></a>
-                        </div>
-                        -->
                     </div>
                </div>
 
-
                <div class = "project-list">
-                    <!--EE V1-->
-                    <div class = "project">
-                        <div class = "image-container">
-                            <img class = "UOR" src="images + files/End effector prototype.jpg" height="300">
-                            <img class = "UOR" src="images + files/End effector prototype 2.jpg" height="300">
-                            <img class = "UOR" src="images + files/End effector prototype 3.jpg" height="300">
-                            <img class = "UOR" src="images + files/End effector prototype 4.jpg" height="300">
+                <!--EE V1-->
+                <div class = "project">
+                    <div class = "image-container">
+                        <img class = "UOR" src="images + files/End effector prototype.jpg" height="300">
+                        <img class = "UOR" src="images + files/End effector prototype 2.jpg" height="300">
+                        <img class = "UOR" src="images + files/End effector prototype 3.jpg" height="300">
+                        <img class = "UOR" src="images + files/End effector prototype 4.jpg" height="300">
 
-                        </div>
-
-                        <button class="left" onclick="plusDivs3(-1)">&#10094;</button>
-                        <button class="right" onclick="plusDivs3(+1)">&#10095;</button>
-
-                        <div class = "project-description">
-                            <p class = "project-title">End Effector - Robotic Arm</p>
-                            <p class = "description">Used <strong><span style="color: #FF3b3F ">SolidWorks</span></strong> to model a prototype of the end effector of a robotic arm for uOttawa's Mars Rover Team.</p>
-                            
-                        </div>
-                        <div class = "buttons">
-                            <a href="https://grabcad.com/library/end-effector-prototype-1" target = "_blank"><button>VIEW ON GRABCAD</button></a>
-                        </div>
                     </div>
-                    <!--Remote Breaking System-->
-                    <div class = "project">
-                        <div class = "image-container">
-                            <img class = "RBS" src="images + files/rbs2.jpg" height="300">
-                            <img class = "RBS" src="images + files/rbs4.gif" height="300">
-                            <img class = "RBS" src="images + files/rbs3.jpg" height="300">
-                            <img class = "RBS" src="images + files/rbs1.jpg" height="300">
-                            <img class = "RBS" src="images + files/rbs5.jpg" height="300">
-                            <img class = "RBS" src="images + files/rbs6.jpg" height="300">
-                            <img class = "RBS" src="images + files/rbs7.jpg" height="300">
-                            <img class = "RBS" src="images + files/rbs8.jpg" height="300">
-                        </div>
+
+                    <button class="left" onclick="plusDivs7(-1)">&#10094;</button>
+                    <button class="right" onclick="plusDivs7(+1)">&#10095;</button>
+
+                    <div class = "project-description">
+                        <p class = "project-title">End Effector - Robotic Arm</p>
+                        <p class = "description">Used SolidWorks to model a prototype of the end effector of a robotic arm for uOttawa's Mars Rover Team.</p>
                         
-                        <button class="left" onclick="plusDivs4(-1)">&#10094;</button>
-                        <button class="right" onclick="plusDivs4(+1)">&#10095;</button>
-
-                        <div class = "project-description">
-                            <p class = "project-title">Remote Braking System Prototype</p>
-                            <p class = "description">Worked in a team of 5 to build a <strong><span style="color: #FF3b3F ">3D-printed</span></strong> remote braking system using <strong><span style="color: #FF3b3F ">SolidWorks</span></strong> and <strong><span style="color: #FF3b3F ">Arduino</span></strong> for a gait trainer, supporting caregivers of individuals that need mobility aid. Achieved a grade of <strong><span style="color: #FF3b3F ">88.5%</span></strong></p>
-                        </div>
-
-                        <div class = "buttons">
-                            <a href="https://makerepo.com/jrami053/1042.gng2101-b15-rbs" target = "_blank"><button>Project Repository</button></a>
-                            <a href="https://github.com/samjytan/Remote-Braking-System" target = "_blank"><button>View Code</button></a>
-                        </div>
-
                     </div>
-
                     
-               </div>
-               
-               <div class = "project-list">
-
-                    <div class = "project">
-                        <div class = "image-container">
-                            <img class = "jamz" src="images + files/sign in.gif" height="300">
-                            <img class = "jamz" src="images + files/set up.gif" height="300">
-                            <img class = "jamz" src="images + files/menu editor.gif" height="300">
-                            <img class = "jamz" src="images + files/order manager.gif" height="300">
-                            <img class = "jamz" src="images + files/profile manager.gif" height="300">
-                            <img class = "jamz" src="images + files/settings.gif" height="300">
-                        </div>
-
-                        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
-                        <button class="right" onclick="plusDivs(+1)">&#10095;</button>
-                                    
-                        <div class = "project-description">
-                                <p class = "project-title">Drone Delivery Business UI Prototype</p>
-                                <p class = "description">Worked in a team of 5 to program a user interface for restaurant owners to define menu items and fulfill orders via drone delivery using <strong><span style="color: #FF3b3F ">HTML</span></strong>, <strong><span style="color: #FF3b3F ">CSS</span></strong>, and <strong><span style="color: #FF3b3F ">JavaScript</span></strong>. Achieved a grade of <strong><span style="color: #FF3b3F ">92%</span></strong>.</p>
-                                
-                            </div>
-
-                        <div class = "buttons">
-                            <a href="https://github.com/samjytan/JAMZBusinessUI.github.io" target = "_blank"><button>VIEW CODE</button></a>
-                            <a href="https://samjytan.github.io/JAMZBusinessUI.github.io/" target = "_blank"><button>VIEW WEBSITE</button></a>
-                        </div>
-                    </div>
-
-                    <div class = "project">
-                        <div class = "image-container">
-                            <img class = "LED" src="images + files/LED 3.jpg" height="300">
-                            <img class = "LED" src="images + files/LED 2.jpg" height="300">
-                            <img class = "LED" src="images + files/LED 1.jpg" height="300">
-                    </div>
-
-                    <button class="left" onclick="plusDivs2(-1)">&#10094;</button>
-                    <button class="right" onclick="plusDivs2(+1)">&#10095;</button>
-
-                        <div class = "project-description">
-                            <p class = "project-title">Remote controlled LED lightstrip</p>
-                            <p class = "description">Used an <strong><span style="color: #FF3b3F ">Arduino</span></strong> and programmed a LED lightstrip to change colors and display a pattern using an IR remote.</p>
-                            
-                        </div>
-                        <div class = "buttons">
-                            <a href="https://github.com/samjytan/Remote-Controlled-LED-Strip/tree/main" target = "_blank"><button>VIEW CODE</button></a>
-                            <a href="images + files/LED-schematic.jpg" download target = "_blank"><button>DOWNLOAD SCHEMATIC</button></a>
-                            <a href="https://www.youtube.com/watch?v=r3qag4a7gmI" target = "_blank"><button>WATCH DEMO</button></a>
-                        </div>
-                    </div>
-                     
                 </div>
-                
-                <!--<div class = "project-list">
+                <!--Remote Breaking System-->
+                <div class = "project">
+                    <div class = "image-container">
+                        <img class = "RBS" src="images + files/rbs2.jpg" height="300">
+                        <img class = "RBS" src="images + files/rbs4.gif" height="300">
+                        <img class = "RBS" src="images + files/rbs3.jpg" height="300">
+                        <img class = "RBS" src="images + files/rbs1.jpg" height="300">
+                        <img class = "RBS" src="images + files/rbs5.jpg" height="300">
+                        <img class = "RBS" src="images + files/rbs6.jpg" height="300">
+                        <img class = "RBS" src="images + files/rbs7.jpg" height="300">
+                        <img class = "RBS" src="images + files/rbs8.jpg" height="300">
+                    </div>
                     
-                        <div class = "project-single">
-                            <div class = "image-container">
-                                <img src="images + files/to-do-list2.gif"  height="300">
-                            </div>
-                            <div class = "project-description">
-                                <p class = "project-title">To-do list</p>
-                                <p class = "description">Used <strong><span style="color: #FF3b3F ">HTML</span></strong>, <strong><span style="color: #FF3b3F ">CSS</span></strong>, and <strong><span style="color: #FF3b3F ">JavaScript</span></strong>, to create a to-do list website.</p>
-                                
-                            </div>
-                            <div class = "buttons">
-                                <a href="https://github.com/samjytan/to-do-list.github.io" target = "_blank"><button>VIEW CODE</button></a>
-                                <a href="https://samjytan.github.io/to-do-list.github.io/" target = "_blank"><button>VIEW WEBSITE</button></a>
-                            </div>
-                         </div>
-                    
-                </div>-->
-                
+                    <button class="left" onclick="plusDivs8(-1)">&#10094;</button>
+                    <button class="right" onclick="plusDivs8(+1)">&#10095;</button>
 
-            </div>
-            
-            <div id = "contact-me-bar">
-                <div id="bottom-link-1"><a href="images + files/Resume - Samuel Tan 2023.pdf" download target = "_blank"><span title="Download" id ="resume">Resume:</span> <img src="images + files/white-download.jpg" title="Download" height = "40" width="40" ></a></div>
-                <div id="bottom-link-2"><a href="mailto:samjytan@gmail.com" target = "_blank"><img src="images + files/white-mail.jpg" height = "50" width="50" title="Email"></a></div>
-                <div id="bottom-link-3"><a href="https://www.linkedin.com/in/samuel-tan-60b9641a9/" target = "_blank"><img src="images + files/white-linkedin.jpg" title="LinkedIn" height = "50" width="50"></a></div>
-                <div id="bottom-link-4"><a href="https://github.com/samjytan" target = "_blank"><img src="images + files/white-github.jpg" title="Github" height = "50" width="50"></a></div>
-            </div>
-        </div> 
+                    <div class = "project-description">
+                        <p class = "project-title">Remote Braking System Prototype</p>
+                        <p class = "description">Worked in a team of 5 to build a 3D-printed remote braking system usingSolidWorks and Arduino for a gait trainer, supporting caregivers of individuals that need mobility aid. Achieved a grade of 88.5%</p>
+                    </div>
+
+                </div>
+           </div>
+
+           
+             
     </body>
     <script src="JS.js"></script>
 </html>
