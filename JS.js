@@ -6,10 +6,10 @@ var slideIndex5 = 1;
 var slideIndex6 = 1;
 var slideIndex7 = 1;
 var slideIndex8 = 1;
-var slideIndex9 = 1; //jounce damper
-var slideIndex10 = 1; //Suspension linkages
-var slideIndex11 = 1; //wrist 1.5
-var slideIndex12 = 1; //egg prototyping device
+var slideIndex9 = 1;
+var slideIndex10 = 1;
+var slideIndex11 = 1;
+var slideIndex12 = 1;
 
 showDivs(slideIndex);
 showDivs2(slideIndex2);
@@ -23,7 +23,6 @@ showDivs9(slideIndex9);
 showDivs10(slideIndex10);
 showDivs11(slideIndex11);
 showDivs12(slideIndex12);
-
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -75,7 +74,7 @@ function plusDivs12(n) {
 
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("jamz");
+  var x = document.getElementsByClassName("RAV2.1");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
@@ -86,7 +85,7 @@ function showDivs(n) {
 
 function showDivs2(n) {
   var i;
-  var x = document.getElementsByClassName("LED");
+  var x = document.getElementsByClassName("jounceDamper");
   if (n > x.length) {slideIndex2 = 1}
   if (n < 1) {slideIndex2 = x.length} ;
   for (i = 0; i < x.length; i++) {
@@ -97,7 +96,7 @@ function showDivs2(n) {
 
 function showDivs3(n) {
   var i;
-  var x = document.getElementsByClassName("UOR");
+  var x = document.getElementsByClassName("ESM");
   if (n > x.length) {slideIndex3 = 1}
   if (n < 1) {slideIndex3 = x.length} ;
   for (i = 0; i < x.length; i++) {
@@ -108,7 +107,7 @@ function showDivs3(n) {
 
 function showDivs4(n) {
   var i;
-  var x = document.getElementsByClassName("RBS");
+  var x = document.getElementsByClassName("LDSC");
   if (n > x.length) {slideIndex4 = 1}
   if (n < 1) {slideIndex4 = x.length} ;
   for (i = 0; i < x.length; i++) {
@@ -130,7 +129,7 @@ function showDivs5(n) {
 
 function showDivs6(n) {
   var i;
-  var x = document.getElementsByClassName("camMount");
+  var x = document.getElementsByClassName("wrist");
   if (n > x.length) {slideIndex6 = 1}
   if (n < 1) {slideIndex6 = x.length} ;
   for (i = 0; i < x.length; i++) {
@@ -141,7 +140,7 @@ function showDivs6(n) {
 
 function showDivs7(n) {
   var i;
-  var x = document.getElementsByClassName("EEV3");
+  var x = document.getElementsByClassName("UOR");
   if (n > x.length) {slideIndex7 = 1}
   if (n < 1) {slideIndex7 = x.length} ;
   for (i = 0; i < x.length; i++) {
@@ -152,7 +151,7 @@ function showDivs7(n) {
 
 function showDivs8(n) {
   var i;
-  var x = document.getElementsByClassName("wrist");
+  var x = document.getElementsByClassName("RBS");
   if (n > x.length) {slideIndex8 = 1}
   if (n < 1) {slideIndex8 = x.length} ;
   for (i = 0; i < x.length; i++) {
@@ -163,7 +162,7 @@ function showDivs8(n) {
 
 function showDivs9(n) {
   var i;
-  var x = document.getElementsByClassName("jounceDamper");
+  var x = document.getElementsByClassName("jamz");
   if (n > x.length) {slideIndex9 = 1}
   if (n < 1) {slideIndex9 = x.length} ;
   for (i = 0; i < x.length; i++) {
@@ -174,18 +173,7 @@ function showDivs9(n) {
 
 function showDivs10(n) {
   var i;
-  var x = document.getElementsByClassName("RSL");
-  if (n > x.length) {slideIndex10 = 1}
-  if (n < 1) {slideIndex10 = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex10-1].style.display = "block";
-}
-
-function showDivs10(n) {
-  var i;
-  var x = document.getElementsByClassName("RSL");
+  var x = document.getElementsByClassName("LED");
   if (n > x.length) {slideIndex10 = 1}
   if (n < 1) {slideIndex10 = x.length} ;
   for (i = 0; i < x.length; i++) {
@@ -196,7 +184,7 @@ function showDivs10(n) {
 
 function showDivs11(n) {
   var i;
-  var x = document.getElementsByClassName("wrist1.5");
+  var x = document.getElementsByClassName("LDSC");
   if (n > x.length) {slideIndex11 = 1}
   if (n < 1) {slideIndex11 = x.length} ;
   for (i = 0; i < x.length; i++) {
