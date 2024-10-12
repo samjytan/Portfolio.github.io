@@ -10,6 +10,8 @@ var slideIndex9 = 1;
 var slideIndex10 = 1;
 var slideIndex11 = 1;
 var slideIndex12 = 1;
+var slideIndex13 = 1;
+var slideIndex14 = 1;
 
 showDivs(slideIndex);
 showDivs2(slideIndex2);
@@ -23,6 +25,8 @@ showDivs9(slideIndex9);
 showDivs10(slideIndex10);
 showDivs11(slideIndex11);
 showDivs12(slideIndex12);
+showDivs13(slideIndex13);
+showDivs14(slideIndex14);
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -71,6 +75,37 @@ function plusDivs11(n) {
 function plusDivs12(n) {
   showDivs12(slideIndex12 += n);
 }
+
+function plusDivs13(n) {
+  showDivs13(slideIndex13 += n);
+}
+
+function plusDivs14(n) {
+  showDivs14(slideIndex14 += n);
+}
+
+function showDivs13(n) {
+  var i;
+  var x = document.getElementsByClassName("CIRC");
+  if (n > x.length) {slideIndex13 = 1}
+  if (n < 1) {slideIndex13 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex13-1].style.display = "block";
+}
+
+function showDivs14(n) {
+  var i;
+  var x = document.getElementsByClassName("CNS1");
+  if (n > x.length) {slideIndex14 = 1}
+  if (n < 1) {slideIndex14 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex14-1].style.display = "block";
+}
+
 
 function showDivs(n) {
   var i;
@@ -203,3 +238,5 @@ function showDivs12(n) {
   }
   x[slideIndex12-1].style.display = "block";
 }
+
+
